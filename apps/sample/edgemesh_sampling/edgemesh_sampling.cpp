@@ -44,7 +44,6 @@ class MyFace    : public Face< MyUsedTypes, face::FFAdj,  face::Normal3f, face::
 class MyEdge    : public Edge<MyUsedTypes,edge::VertexRef, edge::VEAdj, edge::EEAdj, edge::BitFlags >{};
 class MyMesh    : public tri::TriMesh< vector<MyVertex>, vector<MyFace> , vector<MyEdge>  > {};
 
-
 int main( int argc, char **argv )
 {
   if(argc<2)

@@ -53,7 +53,7 @@ int main(int argc,char ** argv)
 	cout << "  * RGB <--> HSL conversion" << endl << endl;
 
 	vcg::Color4<double> hsl = ColorSpace::RGBtoHSL(color);
-	cout << "  RGB --> HSL: " << hsl[0]*360.0 << "° " << hsl[1]*100.0 << "% " << hsl[2]*100.0 << "% " << endl;
+	cout << "  RGB --> HSL: " << hsl[0]*360.0 << "?" << hsl[1]*100.0 << "% " << hsl[2]*100.0 << "% " << endl;
 
 	rgb = ColorSpace::HSLtoRGB(hsl);
 	rgb *= 255.0;
@@ -66,7 +66,7 @@ int main(int argc,char ** argv)
 	cout << "  * RGB <--> HSV conversion" << endl << endl;
 
 	vcg::Color4<double> hsv = ColorSpace::RGBtoHSV(color);
-	cout << "  RGB --> HSV: " << hsv[0]*360.0 << "° " << hsv[1]*100.0 << "% " << hsv[2]*100.0 << "% " <<  endl;
+	cout << "  RGB --> HSV: " << hsv[0]*360.0 << "?" << hsv[1]*100.0 << "% " << hsv[2]*100.0 << "% " <<  endl;
 
 	rgb = ColorSpace::HSVtoRGB(hsv);
 	rgb *= 255.0;
@@ -115,6 +115,10 @@ int main(int argc,char ** argv)
 	xyz = ColorSpace::chromaticAdaptation(xyzD65, ColorSpace::VCG_ILLUMINANT_D65, ColorSpace::VCG_ILLUMINANT_D50);
 	cout << "  XYZ (D65 --> D50): " << xyz[0] << " " << xyz[1] << " " << xyz[2] << endl << endl;
 
+
+	int i = 0;
+	cin >> i;
 	return 0;
+	
 }
 
