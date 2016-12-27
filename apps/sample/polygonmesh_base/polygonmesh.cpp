@@ -128,8 +128,8 @@ TMesh tm0;
 
 int	main(int argc, char *argv[]) {
 
-    int loadmask;
 
+    int loadmask;
 if(true){
     /*
     first way:

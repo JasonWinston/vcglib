@@ -67,7 +67,6 @@ bool callback(int percent, const char *str) {
   cout << "str: " << str << " " << percent << "%\r";
   return true;
 }
-
 template <class MESH>
 bool NormalTest(typename face::Pos<typename MESH::FaceType> pos)
 {
